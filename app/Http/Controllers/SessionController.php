@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use PhpParser\Node\Expr\FuncCall;
 
-class RegisteredUserController extends Controller
+class SessionController extends Controller
 {
     public function create() {
-        return view('auth.register');
+        return view('auth.login');
     }
 
     public function store() {
